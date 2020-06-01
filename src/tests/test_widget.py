@@ -1,4 +1,4 @@
-from sample_qt_error import MyComboBox
+from sample_qt_error.my_combo_box import MyComboBox
 
 
 class TestMyComboBox:
@@ -6,3 +6,5 @@ class TestMyComboBox:
         box = MyComboBox()
         box.show()
         qtbot.add_widget(box)
+        box.addItems(["A", "B", "C"])
+        assert box.count() == 3
