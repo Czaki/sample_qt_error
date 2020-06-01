@@ -1,4 +1,4 @@
-from PySide2.QtWidgets import QComboBox
+from qtpy.QtWidgets import QComboBox
 
 
 class MyComboBox(QComboBox):
